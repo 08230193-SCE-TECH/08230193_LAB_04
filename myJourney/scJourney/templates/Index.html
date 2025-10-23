@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Journey</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>🌱 My Learning Journey</h1>
+    </header>
+
+    <main>
+        <h2>About My Journey</h2>
+        <p>
+            My journey in learning ICT began when I first became curious about how computers and websites work. 
+            In the beginning, I found programming difficult—especially understanding logic and debugging errors. 
+            But through continuous practice, discussions with my classmates, and guidance from my tutors, I started to enjoy coding.
+        </p>
+
+        <p>
+            Over the semesters, I have learned about Python, HTML, CSS, databases, and Django. 
+            One of my proudest achievements was developing a project called <strong>Lost Belonging Portal</strong>, 
+            which helped me understand how web applications can solve real-life problems.
+        </p>
+
+        <p>
+            Learning Django has been especially exciting. It allows me to connect data from models to templates using the MVT architecture. 
+            Though sometimes challenging, it has taught me patience and problem-solving. 
+            I now feel confident in creating simple yet meaningful web applications.
+        </p>
+
+        <p>
+            In the future, I want to learn more about full-stack development and build educational tools that can support learning in creative ways.
+        </p>
+
+        <!-- Dynamic Learning Journey Entries -->
+        {% if journeys %}
+        <div class="learning-milestones">
+            <h3>📚 My Learning Milestones</h3>
+            {% for journey in journeys %}
+            <div class="milestone-item">
+                <h4>{{ journey.title }}</h4>
+                <p>{{ journey.description }}</p>
+                <small class="milestone-date">Added on: {{ journey.date|date:"F d, Y" }}</small>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <a href="{% url 'aboutMe' %}" class="nav-button">
+            Go to About Me →
+        </a>
+    </main>
+
+    <footer>
+        <p>Created by Sonam Choden | © 2025 My Learning Journey</p>
+    </footer>
+</body>
+</html>
