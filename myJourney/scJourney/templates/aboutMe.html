@@ -1,3 +1,4 @@
+<!-- ...existing code... -->
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +16,11 @@
         </div>
 
         <div class="profile-section">
-            {% if about %}
+
+            {% if abouts %}
+               {% for about in abouts %}
+
+
                 <div class="info-item">
                     <span class="info-label">Name:</span>
                     <p>{{ about.name }}</p>
@@ -28,6 +33,7 @@
                     <span class="info-label">Email:</span>
                     <p><a href="mailto:{{ about.email }}">{{ about.email }}</a></p>
                 </div>
+               {% endfor %}
             {% else %}
                 <div class="info-item no-data">
                     <p><em>No profile information available. Please add your information through the admin panel.</em></p>
@@ -43,3 +49,4 @@
     </div>
 </body>
 </html>
+<!-- ...existing code... -->

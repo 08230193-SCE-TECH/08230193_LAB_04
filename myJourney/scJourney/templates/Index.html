@@ -9,37 +9,16 @@
 </head>
 <body>
     <header>
-        <h1>🌱 My Learning Journey</h1>
+        <h1> My Learning Journey</h1>
     </header>
 
     <main>
         <h2>About My Journey</h2>
-        <p>
-            My journey in learning ICT began when I first became curious about how computers and websites work. 
-            In the beginning, I found programming difficult—especially understanding logic and debugging errors. 
-            But through continuous practice, discussions with my classmates, and guidance from my tutors, I started to enjoy coding.
-        </p>
-
-        <p>
-            Over the semesters, I have learned about Python, HTML, CSS, databases, and Django. 
-            One of my proudest achievements was developing a project called <strong>Lost Belonging Portal</strong>, 
-            which helped me understand how web applications can solve real-life problems.
-        </p>
-
-        <p>
-            Learning Django has been especially exciting. It allows me to connect data from models to templates using the MVT architecture. 
-            Though sometimes challenging, it has taught me patience and problem-solving. 
-            I now feel confident in creating simple yet meaningful web applications.
-        </p>
-
-        <p>
-            In the future, I want to learn more about full-stack development and build educational tools that can support learning in creative ways.
-        </p>
-
+        
         <!-- Dynamic Learning Journey Entries -->
         {% if journeys %}
         <div class="learning-milestones">
-            <h3>📚 My Learning Milestones</h3>
+            <h3> My Learning Milestones</h3>
             {% for journey in journeys %}
             <div class="milestone-item">
                 <h4>{{ journey.title }}</h4>

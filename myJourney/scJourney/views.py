@@ -45,8 +45,8 @@ def aboutMe(request):
         HttpResponse: Rendered aboutMe.html template with personal data
     """
     # Retrieve the first (and typically only) personal information entry
-    about = AboutMe.objects.first()
+    abouts = AboutMe.objects.all()
     
     # Render the aboutMe template with the personal data
-    return render(request, 'aboutMe.html', {'about': about})
+    return render(request, 'aboutMe.html', {'abouts': abouts})
 
