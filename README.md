@@ -3,11 +3,9 @@
 **Student ID:** 08230193  
 **Name:** Sonam Choden  
 **Lab:** 04 - Django MVT Architecture  
-**Course:** Web Application Development  
+**Course:**    B.Ed IT  
 
-## Project Overview
 
-This Django web application demonstrates the Model-View-Template (MVT) architecture by creating a personalized learning journey website. The application showcases my progress in web development and provides information about my background.
 
 ## Features
 
