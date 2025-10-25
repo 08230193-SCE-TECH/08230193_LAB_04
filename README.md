@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Personal Learning Journey Web Application
 
 **Student ID:** 08230193  
@@ -190,3 +191,6 @@ This project is created for educational purposes as part of Lab 04 - Django MVT 
 ---
 
 *This project demonstrates proficiency in Django web development, MVT architecture, and modern web design principles.*
+=======
+#08230193_LAB_04
+>>>>>>> 624c4dd4901a081d0a148eb52aed69c5d4cd7fc3
