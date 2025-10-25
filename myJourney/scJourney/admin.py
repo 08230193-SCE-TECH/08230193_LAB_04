@@ -1,14 +1,7 @@
-"""
-Django Admin Configuration for Personal Learning Journey Web Application
-Author: Sonam Choden
-Student ID: 08230193
-Lab: 04 - Django MVT Architecture
 
-This module configures the Django admin interface for managing
-the learning journey application data.
-"""
-
+#The first line allows you to use Django’s admin features
 from django.contrib import admin
+# Import the models from the current app
 from .models import AboutMe, LearningJourney
 
 # Register your models here.

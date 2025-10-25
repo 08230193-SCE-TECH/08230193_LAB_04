@@ -1,14 +1,8 @@
-"""
-URL Configuration for Personal Learning Journey Web Application
-Author: Sonam Choden
-Student ID: 08230193
-Lab: 04 - Django MVT Architecture
 
-This module defines the URL patterns for the scJourney app.
-It maps URLs to their corresponding view functions.
-"""
-
+# Import the path function to define URL routes
 from django.urls import path
+
+# Import the views file (where the functions for each page are written)
 from . import views
 
 # URL patterns for the learning journey application

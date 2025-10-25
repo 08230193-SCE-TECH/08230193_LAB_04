@@ -1,29 +1,13 @@
-"""
-Django Views for Personal Learning Journey Web Application
-Author: Sonam Choden
-Student ID: 08230193
-Lab: 04 - Django MVT Architecture
 
-This module contains the view functions that handle HTTP requests
-and return appropriate responses for the learning journey application.
-"""
-
+# Import the render function to display HTML templates
 from django.shortcuts import render
+
+
+# Import the models to access data from the database
 from .models import AboutMe, LearningJourney
 
 def Index(request):
-    """
-    View function for the main learning journey page.
-    
-    This view retrieves all learning journey entries from the database
-    and passes them to the Index.html template for display.
-    
-    Args:
-        request: HTTP request object
-        
-    Returns:
-        HttpResponse: Rendered Index.html template with journey data
-    """
+   
     # Retrieve all learning journey entries from the database
     journeys = LearningJourney.objects.all()
     
@@ -32,18 +16,7 @@ def Index(request):
 
 
 def aboutMe(request):
-    """
-    View function for the 'About Me' page.
     
-    This view retrieves the first (and typically only) AboutMe entry
-    from the database and passes it to the aboutMe.html template.
-    
-    Args:
-        request: HTTP request object
-        
-    Returns:
-        HttpResponse: Rendered aboutMe.html template with personal data
-    """
     # Retrieve the first (and typically only) personal information entry
     abouts = AboutMe.objects.all()
     

@@ -15,10 +15,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include 
+from django.urls import path,include  # Used to define URL paths and include other URL configurations
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('scJourney.urls')),
+    path('', include('scJourney.urls')),    # Include URL patterns from the 'scJourney' app
+    # The empty string ('') means this is the default route (homepage)
 ]
 
