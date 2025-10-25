@@ -1,4 +1,3 @@
-
 # Import the render function to display HTML templates
 from django.shortcuts import render
 
@@ -22,4 +21,3 @@ def aboutMe(request):
     
     # Render the aboutMe template with the personal data
     return render(request, 'aboutMe.html', {'abouts': abouts})
-
